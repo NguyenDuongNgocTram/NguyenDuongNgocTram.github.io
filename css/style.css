@@ -537,20 +537,58 @@ nav li a:hover{
 #menu{
 	font-size: 0.6em;
 	margin-right: -8%;
+	text-align: right;
 }
 .banner-text{
 	width: 100%;
 	margin-left: 6%;
 }
 .line{
-	width: 7vw;
+	width: 8.6vw;
 	height: 0.5vh;
 }
 .banner-text h1{
-	font-size: 1.8em;
+	font-size: 2em;
 }
 .banner-text p{
 	font-size: 1em;
+}
+.left{
+	width: 100%;
+	float: none;
+	text-align: center;
+	margin-top: 9%;
+}
+.right{
+	width: 40%;
+	float: left;
+/*	background: purple;*/
+	margin-left: 6%;
+	margin-top: 13%;
+}
+.right h2{
+	font-size: 2.25em;
+	line-height: 1.28;
+}
+.right ul{
+	list-style: none;
+	margin: 6% 0%;
+	font-weight: 600;
+	font-family: 'Raleway', sans-serif;
+}
+.right li{
+	display: inline;
+	padding-right: 6%;
+	font-size: 1.13em;
+	color: #02d871;
+}
+.right p{
+	margin-bottom: 5%;
+	line-height: 1.87;
+	font-family: 'Raleway', sans-serif;
+}
+.sec01{
+	padding: 2.8% 7%;
 }
 }
 
