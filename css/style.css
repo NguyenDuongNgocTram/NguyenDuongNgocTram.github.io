@@ -529,6 +529,31 @@ nav li a:hover{
 }
 
 
+@media screen and (max-width : 414px){
+#logo img{
+	width: 100%;
+	margin-left: -18%;
+}
+#menu{
+	font-size: 0.6em;
+}
+.banner-text{
+	width: 100%;
+	margin-left: 8%;
+}
+.line{
+	width: 8vw;
+	height: 0.5vh;
+}
+.banner-text h1{
+	font-size: 2em;
+}
+.banner-text p{
+	font-size: 1em;
+}
+}
+
+
 
 
 
