@@ -531,11 +531,12 @@ nav li a:hover{
 
 @media screen and (max-width : 414px){
 #logo img{
-	width: 100%;
+	width: 110%;
 	margin-left: -18%;
 }
 #menu{
 	font-size: 0.6em;
+	margin-right: -8%;
 }
 .banner-text{
 	width: 100%;
