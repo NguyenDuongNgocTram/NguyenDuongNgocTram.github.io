@@ -8,10 +8,13 @@
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
 	<div id="wrapper">
+		<input type="button" id="mybtn" value="Top" onclick="topFunction()">
 		<section id="banner">
 			<div class="container">
 				<figure id="logo"><a href="index.html"><img src="img/logo.png" alt=""></a></figure>
@@ -26,7 +29,7 @@
 			</div>
 			<div class="banner-text">
 				<div class="line"></div>
-				<h1>We Design Interface<br>That Works Great!</h1>
+				<h1 class="animate__animated animate__zoomInDown" data_temp_dwid="1">We Design Interface<br>That Works Great!</h1>
 				<p>We Believe in working in smarter</p>
 				<button class="banner-button"><a href="#">Our Works</a></button>
 			</div>
@@ -43,7 +46,7 @@
 					<li>App.</li>
 					<li>Branding.</li>
 				</ul>
-				<p>Just two good ol' boys Never meanin' no harm. Beats all you've ever<br>saw been in trouble with the law since the day they was born.</p>
+				<p>Just two good ol' boys Never meanin' no harm. Beats all you've ever saw been in trouble with the law since the day they was born.</p>
 				<button class="banner-button sec01"><a href="#">Our Services</a></button>
 			</div>
 		</section>
@@ -199,5 +202,32 @@
 			<hr class="ltren lduoi">
 		</section>
 	</div>
+	
+	<script>
+//		Get the button:
+		mybutton = document.getElementById("mybtn");
+
+//		When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+			mybutton.style.display = "block";
+		  } else {
+			mybutton.style.display = "none";
+		  }
+		}
+//		When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0; // For Safari
+		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}
+	</script>
+	
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+//		AOS.init({disable: 'mobile'}); /* AOS se k hoat dong tren mobile */
+	</script>
 </body>
 </html>
